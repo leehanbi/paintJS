@@ -13,12 +13,36 @@ body {
   width: 700px;
   height: 700px;
   background-color: white;
-  border-radius: 15px;
+  border-radius: 5px;
   box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
   margin-top: 50px;
 }
 .controls {
   margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.controls__btns button {
+  all: unset;
+  cursor: pointer;
+  background-color: #f6f9fc;
+  padding: 5px 0px;
+  width: 80px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  color: rgba(68, 67, 67, 0.7);
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 12px;
+}
+.controls__btns button:active {
+  transform: scale(0.98);
+}
+.controls .controls__btns {
+  margin-bottom: 30px;
 }
 .controls .controls__colors {
   display: flex;
